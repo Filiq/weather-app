@@ -22,7 +22,7 @@ const Settings = ({ isSettings, setIsSettings, settings, setSettings }) => {
             <SCSwitch>
               <input
                 type="checkbox"
-                checked={settings.darkMode ? true : false}
+                checked={!settings.darkMode ? false : true}
                 onChange={() => {
                   localStorage.setItem(
                     "settings",
